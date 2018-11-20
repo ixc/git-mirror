@@ -7,7 +7,7 @@ services:
       MIRROR:
       ORIGIN:
       PRIVATE_KEY:
-    image: interaction/git-mirror:local
+    image: interaction/git-mirror:${IMAGE_TAG:-local}
     volumes:
       - ./git-mirror.sh:/etc/periodic/15min/git-mirror.sh
       - ./ssh-config:/root/.ssh/config
