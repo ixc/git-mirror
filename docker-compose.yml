@@ -1,0 +1,13 @@
+version: '2.4'
+
+services:
+  git-mirror:
+    build: .
+    environment:
+      MIRROR:
+      ORIGIN:
+      PRIVATE_KEY:
+    image: interaction/git-mirror:local
+    volumes:
+      - ./git-mirror.sh:/etc/periodic/15min/git-mirror.sh
+      - ./ssh-config:/root/.ssh/config
