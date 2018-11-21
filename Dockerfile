@@ -16,6 +16,6 @@ COPY ssh-config /root/.ssh/config
 VOLUME /data
 
 ENTRYPOINT ["/sbin/tini", "--"]
-CMD ["crond", "-f"]
+CMD ["crond", "-l", "5", "-f"]
 
 RUN chmod 600 /root/.ssh/config
