@@ -10,8 +10,7 @@ cd /data
 if [[ -z "$(ls)" ]]; then
 	git clone --mirror "$ORIGIN" .
 else
-	git fetch
+	git fetch --prune
 fi
 
-git push --all "$MIRROR"
-git push --tags "$MIRROR"
+git push --mirror "$MIRROR"
