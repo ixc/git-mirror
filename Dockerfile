@@ -17,3 +17,5 @@ VOLUME /data
 
 ENTRYPOINT ["/sbin/tini", "--"]
 CMD ["crond", "-f"]
+
+RUN chmod 600 /root/.ssh/config
