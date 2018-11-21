@@ -9,4 +9,4 @@ services:
       PRIVATE_KEY:
     image: interaction/git-mirror:${IMAGE_TAG:-local}
     volumes:
-      - ./git-mirror.sh:/etc/periodic/15min/git-mirror.sh
+      - ./git-mirror.sh:/etc/periodic/15min/git-mirror
