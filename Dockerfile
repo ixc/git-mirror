@@ -10,7 +10,7 @@ RUN apk update \
         tini \
     && rm -rf /var/cache/apk/*
 
-COPY git-mirror.sh /etc/periodic/15min/git-mirror.sh
+COPY git-mirror.sh /etc/periodic/15min/git-mirror
 COPY ssh-config /root/.ssh/config
 
 VOLUME /data
