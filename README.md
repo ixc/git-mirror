@@ -1,6 +1,6 @@
 # git-mirror
 
-A Docker image that updates a git repository mirror every 15 minutes.
+Docker image that updates a git repository mirror every 15 minutes.
 
 
 # Usage
